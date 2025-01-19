@@ -41,7 +41,7 @@ h1 {
 
 .card p {
     padding: 30px 20px 20px 20px;
-    border: solid black 1px 1px 0 1px;
+    border: solid black 1px;
 }
 
 .card {
@@ -61,7 +61,8 @@ h1 {
 }
 
 main {
-    width: fit-content;
+    width: 100%;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: 60% auto;
     line-height: 2;
