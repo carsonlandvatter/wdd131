@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    background-color: rgb(42, 42, 42);
+    padding: 30px;
+    text-align: center;
+}
+
+.secondparagraph {
+    padding: 15px 200px 0 0;
+}
+
+.secondparagraph img {
+    float: left;
+}
+
+.card h2{
+    background-color: rgb(42, 42, 42);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+}
+
+.card p {
+    padding: 30px 20px 20px 20px;
+}
+
+.card {
+    margin: 20px;
+    border: solid black;
+    border-radius: 22px;
+}
+
+.card h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card ul {
+    padding: 100px 0 0 100px ;
+    font-size: x-large;
+}
+
+main {
+    width: 100%;
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: 60% auto;
+    line-height: 2;
+    font-size: large;
+    flex: 1;
+}
+
+img {
+    height: 200px;
+    width: auto;
+    padding: 20px;
+    float: right;
+}
+
+header nav {
+    background-color: rgb(91, 91, 91);
+    text-align: center;
+    padding: 20px 60px 20px 20px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    padding: 20px;
+    border: solid white;
+}
+
+footer {
+    padding: 15px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
