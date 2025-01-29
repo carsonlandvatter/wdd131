@@ -108,6 +108,10 @@ footer {
     content: '\2630';
 }
 
+.close-btn {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
     .menu-button {
         display: block;
@@ -132,5 +136,14 @@ footer {
     .nav-menu.open {
         display: flex;
         text-align: center;
+    }
+
+    .close-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        align-self: flex-end;
+        font-size: large;
     }
 }
