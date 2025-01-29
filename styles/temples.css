@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "GFS Didot", serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+}
+
+:root {
+    --primary-color: rgb(28, 88, 167);
+    --secondary-color: rgb(114, 169, 218);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px;
+}
+
+.menu-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-button .menu-icon {
+    font-size: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    align-self: flex-end;
+    font-size: large;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu a:hover {
+    color: navy;
+}
+
+h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 30px;
+    margin: 50px 0 0 0;
+}
+
+.menu-icon::before {
+    content: '\2630';
+}
+
+@media screen and (max-width: 800px) {
+    .menu-button {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 30px;
+        font-size: x-large;
+        z-index: 2;
+    }
+
+    .nav-menu.open {
+        display: flex;
+        text-align: center;
+    }
+}
