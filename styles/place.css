@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: "Arial", serif;
+    font-family: "Geist", serif;
     font-weight: 400;
     font-style: normal;
     display: flex;
@@ -100,6 +100,14 @@ h1 {
     line-height: 2;
 }
 
+.weather-icon {
+    display: none;
+}
+
+.weather-header::after {
+    content: " ⛅️";
+}
+
 footer {
     width: 100%;
     text-align: center;
@@ -157,8 +165,8 @@ footer {
         width: 100%;
         margin: 0;
         padding: 15px;
-        background-color: var(--primary-color);
-        color: white;
+        background-color: white;
+        color: black;
         font-weight: bold;
         font-size: 1.5rem;
         text-align: center;
@@ -174,11 +182,21 @@ footer {
         color: white;
     }
 
+    .weather-icon {
+        display: inline-block;
+        width: 50px
+    }
+
+    .weather-header::after {
+        content: "";
+    }
+
     .data-content, .weather-content {
         text-align: center;
         line-height: 1.6;
         color: white;
         background-color: var(--primary-color);
+        padding-top: 20px;
         padding-bottom: 20px;
     }
 
