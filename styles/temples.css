@@ -48,11 +48,7 @@ header {
 }
 
 .close-btn {
-    background: none;
-    border: none;
-    color: white;
-    align-self: flex-end;
-    font-size: large;
+    display: none;
 }
 
 .nav-menu a {
@@ -106,10 +102,6 @@ footer {
 
 .menu-icon::before {
     content: '\2630';
-}
-
-.close-btn {
-    display: none;
 }
 
 @media screen and (max-width: 800px) {
