@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Oswald", serif;
+    color: #374349;
+}
+
+#site-name {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #003B7A;
+}
+
+#site-name ul {
+    list-style: none;
+}
+
+#site-name p {
+    padding-bottom: 20px;
+}
+
+#site-name img {
+    padding-bottom: 20px;
+}
+
+#site-purpose {
+    padding: 20px;
+}
+
+strong {
+    color: #003B7A;
+}
+#scenarios {
+    padding: 20px;
+    background-color: #ACD9EC;
+}
+
+#color-schema {
+    padding: 20px;
+}
+
+#typography {
+    background-color: #ACD9EC;
+    padding: 20px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+    padding: 40px;
+    color: white;
+    background-color: #374349;
+}
