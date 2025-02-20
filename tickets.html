@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aspen Summit Resort Page for purchasing tickets">
+    <meta name="author" content="Carson Landvatter">
+    <title>Lift Tickets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body class="tickets-page">
+    <header>
+        <img src="images/logo.png" width="40px">
+        <h1>ASPEN SUMMIT RESORT</h1>
+            <nav>
+                <ul>
+                    <li><a href="project.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tickets.html">Lift Tickets</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h2>Lift Tickets</h2>
+        <p>Choose your pass:</p>
+        <table id="ticket-table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody id="ticket-options"></tbody>
+        </table>
+        <button id="confirm-purchase">Confirm Purchase</button>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> | Carson Landvatter | Salt Lake City, Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
