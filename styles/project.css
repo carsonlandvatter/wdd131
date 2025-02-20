@@ -108,7 +108,7 @@ main h2, main p {
     padding: 25px;
 }
 
-.tickets-page footer, .contact footer {
+.tickets-page footer, .contact footer, .checkout footer {
     position: absolute;
 }
 
