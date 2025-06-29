@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0d2b56;
+    --secondary-color: #bd3039;
+}
+
+body {
+    font-family: "Liter", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+nav a:hover {
+    border: 1px solid white;
+}
+
+p {
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template: auto 1fr auto / 2fr 1fr;
+    gap: 10px;
+    margin: 10px;
+    max-width: 2000px;
+}
+
+main h1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    color: black;
+    background-color: white;
+    padding: 5px 0 5px 20px;
+    text-align: left;
+}
+
+figure {
+    float: left;
+}
+
+h1, h2, footer {
+    background-color: #0d2b56;
+    text-align: center;
+    color: white;
+}
+
+h1, h2 {
+    font-weight: 900;
+    padding: 10px;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+figcaption {
+    padding: 10px;
+    margin: 0;
+    font-style: italic;
+}
+
+ul {
+    padding: 20px;
+    margin-top: 35%;
+}
+
+footer p {
+    padding: 15px;
+}
+
+/* Class Selectors */
+
+.card {
+    border-radius: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.card li {
+    list-style-position: inside;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    float: right;
+    margin: 20px;
+}
+
+/* ID Selectors */
+
+#california h2 {
+    background-color: white;
+    color: black;
+    border-bottom: 1px dotted black;
+    width: 20rem;
+    margin-left: 20px;
+}
+
+#california p {
+    max-width: 600px;
+}
+
+#california img {
+    margin: 20px;
+}
+
+#course-title {
+    display: block;
+}
+
+#container {
+    display: grid;
+    min-height: 100vh;
+    grid-template: auto 1fr auto / 1fr;
+}
+
+#lastModified {
+    padding-top: 0;
+}
